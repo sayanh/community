@@ -1,4 +1,4 @@
-# Add monitoring to a Kyma component
+# Add monitoring to a Kyma REST Service
 
 ## Enable dashboard in Grafana
 - Add the `kyma-grafana: enabled` and the `app: <value>` label to the **PodTemplate**. Make sure you add the `app: <value>` label either to `Deployment` or `Statefulset` specification as well. Performing this step enables the pre-packaged dashboard with [RED](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture) and [USE](http://www.brendangregg.com/usemethod.html) metrics for the application. The dashboard is defined [here](https://github.com/kyma-project/kyma/blob/master/resources/monitoring/charts/grafana/dashboards/rest-service.json).
